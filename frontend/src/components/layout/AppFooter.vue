@@ -40,9 +40,9 @@
             </li>
           </ul>
           <div class="footer-socials">
-            <a href="#" class="social-icon" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            
             <a href="#" class="social-icon" aria-label="VK"><i class="fa-brands fa-vk"></i></a>
-            <a href="#" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            
           </div>
         </div>
       </div>
