@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="badge">
-      <i class="fa-regular fa-newspaper"></i> Последние обновления
+      <i class="fa-solid fa-newspaper"></i> Последние обновления
     </div>
 
     <div class="page-header">
@@ -11,12 +11,12 @@
     <div class="news-grid">
       <article v-for="news in newsList" :key="news.id" class="news-card">
         <div class="news-date">
-          <i class="fa-regular fa-calendar-alt"></i> {{ news.date }}
+          <i class="fa-solid fa-calendar-alt"></i> {{ news.date }}
         </div>
         <h2 class="news-title">{{ news.title }}</h2>
         <p class="news-description">{{ news.description }}</p>
         <div class="news-tag" v-if="news.tag">
-          <i class="fa-regular fa-tag"></i> {{ news.tag }}
+          <i class="fa-solid fa-tag"></i> {{ news.tag }}
         </div>
       </article>
     </div>
@@ -47,7 +47,7 @@ onMounted(async () => {
         id: 1,
         date: '15 мая 2025',
         title: 'Запуск версии 1.0',
-        description: 'Мы рады представить TaskFlow — удобное приложение для управления задачами. Теперь вы можете создавать, редактировать и отслеживать задачи с группировкой по категориям.',
+        description: 'Мы рады представить Милый дом — удобное приложение для управления задачами. Теперь вы можете создавать, редактировать и отслеживать задачи с группировкой по категориям.',
         tag: 'Релиз'
       },
       {

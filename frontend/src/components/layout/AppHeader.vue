@@ -3,7 +3,7 @@
     <div class="container">
       <div class="logo">
         <i class="fa-solid fa-list-check"></i>
-        <span>TaskFlow</span>
+        <span>Милый дом</span>
       </div>
       <nav class="nav-links">
         <router-link to="/" class="nav-link" active-class="active">

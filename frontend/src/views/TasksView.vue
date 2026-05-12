@@ -1,13 +1,13 @@
 <template>
   <div>
     <div class="badge">
-      <i class="fa-regular fa-list-check"></i> Управление задачами
+      <i class="fa-solid fa-list-check"></i> Управление задачами
     </div>
 
     <div class="page-header">
       <h1 class="page-title">Мои задачи</h1>
       <button class="btn-primary" @click="openCreateModal">
-        <i class="fa-regular fa-plus"></i> Новая задача
+        <i class="fa-solid fa-plus"></i> Новая задача
       </button>
     </div>
 
@@ -32,26 +32,26 @@
           </div>
           <p v-if="task.description" class="task-desc">{{ task.description }}</p>
           <div class="task-datetime">
-            <i class="fa-regular fa-calendar"></i> {{ formatDateTime(task.from_time) }} — {{ formatDateTime(task.to_time) }}
+            <i class="fa-solid fa-calendar"></i> {{ formatDateTime(task.from_time) }} — {{ formatDateTime(task.to_time) }}
           </div>
           <div class="task-category">
-            <i class="fa-regular fa-folder"></i> {{ getCategoryName(task.category_id) }}
+            <i class="fa-solid fa-folder"></i> {{ getCategoryName(task.category_id) }}
           </div>
           <div class="task-status">
             <span :class="task.status ? 'status-done' : 'status-pending'">
-              <i :class="task.status ? 'fa-regular fa-circle-check' : 'fa-regular fa-clock'"></i>
+              <i :class="task.status ? 'fa-solid fa-circle-check' : 'fa-solid fa-clock'"></i>
               {{ task.status ? 'Выполнена' : 'В процессе' }}
             </span>
           </div>
           <div class="task-actions">
-            <button class="btn-icon" @click="openEditModal(task)"><i class="fa-regular fa-pen-to-square"></i></button>
-            <button class="btn-icon delete" @click="deleteTask(task.id)"><i class="fa-regular fa-trash-can"></i></button>
+            <button class="btn-icon" @click="openEditModal(task)"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button class="btn-icon delete" @click="deleteTask(task.id)"><i class="fa-solid fa-trash-can"></i></button>
           </div>
         </div>
       </div>
       <div v-if="tasksStore.loading" class="loading-state">Загрузка...</div>
       <div v-if="!tasksStore.loading && filteredTasks.length === 0" class="empty-state">
-        <i class="fa-regular fa-face-smile"></i> Нет задач. Создайте первую!
+        <i class="fa-solid fa-face-smile"></i> Нет задач. Создайте первую!
       </div>
     </div>
 
@@ -60,7 +60,7 @@
       <div class="modal">
         <div class="modal-header">
           <h2>{{ isEditing ? 'Редактировать задачу' : 'Новая задача' }}</h2>
-          <button class="modal-close" @click="closeModal"><i class="fa-regular fa-xmark"></i></button>
+          <button class="modal-close" @click="closeModal"><i class="fa-solid fa-xmark"></i></button>
         </div>
         <form @submit.prevent="submitTask">
           <div class="form-group">

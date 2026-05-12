@@ -1,13 +1,13 @@
 <template>
   <div>
     <div class="badge">
-      <i class="fa-regular fa-tags"></i> Организация задач
+      <i class="fa-solid fa-tags"></i> Организация задач
     </div>
 
     <div class="page-header">
       <h1 class="page-title">Категории</h1>
       <button class="btn-primary" @click="openCreateModal">
-        <i class="fa-regular fa-plus"></i> Создать категорию
+        <i class="fa-solid fa-plus"></i> Создать категорию
       </button>
     </div>
 
@@ -18,13 +18,13 @@
           <span class="task-count">{{ tasksCountByCategory(cat.id) }} задач</span>
         </div>
         <div class="category-actions">
-          <button class="btn-icon" @click="openEditModal(cat)"><i class="fa-regular fa-pen-to-square"></i></button>
-          <button class="btn-icon delete" @click="deleteCategory(cat.id)"><i class="fa-regular fa-trash-can"></i></button>
+          <button class="btn-icon" @click="openEditModal(cat)"><i class="fa-solid fa-pen-to-square"></i></button>
+          <button class="btn-icon delete" @click="deleteCategory(cat.id)"><i class="fa-solid fa-trash-can"></i></button>
         </div>
       </div>
       <div v-if="categoriesStore.loading" class="loading-state">Загрузка...</div>
       <div v-if="!categoriesStore.loading && categoriesStore.categories.length === 0" class="empty-state">
-        <i class="fa-regular fa-folder-open"></i> Нет категорий. Создайте первую!
+        <i class="fa-solid fa-folder-open"></i> Нет категорий. Создайте первую!
       </div>
     </div>
 
@@ -33,7 +33,7 @@
       <div class="modal">
         <div class="modal-header">
           <h2>{{ isEditing ? 'Редактировать категорию' : 'Новая категория' }}</h2>
-          <button class="modal-close" @click="closeModal"><i class="fa-regular fa-xmark"></i></button>
+          <button class="modal-close" @click="closeModal"><i class="fa-solid fa-xmark"></i></button>
         </div>
         <form @submit.prevent="submitCategory">
           <div class="form-group">

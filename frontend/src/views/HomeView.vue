@@ -5,8 +5,8 @@
     </div>
 
     <div class="hero">
-      <h1 class="hero-title">TaskFlow</h1>
-      <p class="hero-subtitle">Ваш личный помощник в управлении задачами</p>
+      <h1 class="hero-title">Милый дом</h1>
+      <p class="hero-subtitle">Уютный помощник для домашних дел</p>
       <div class="hero-buttons">
         <router-link to="/tasks" class="btn-primary">Перейти к задачам</router-link>
         <router-link to="/categories" class="btn-secondary">Управлять категориями</router-link>
@@ -15,22 +15,22 @@
 
     <div class="features">
       <div class="feature-card">
-        <i class="fa-regular fa-list-check feature-icon"></i>
+        <i class="fa-solid fa-list-check"></i>
         <h3>Удобный список задач</h3>
         <p>Создавайте, редактируйте и отслеживайте выполнение задач</p>
       </div>
       <div class="feature-card">
-        <i class="fa-regular fa-tags feature-icon"></i>
+        <i class="fa-solid fa-tags"></i>
         <h3>Категории</h3>
         <p>Группируйте задачи по категориям для лучшей организации</p>
       </div>
       <div class="feature-card">
-        <i class="fa-regular fa-calendar feature-icon"></i>
+        <i class="fa-solid fa-calendar"></i>
         <h3>Планирование времени</h3>
         <p>Указывайте даты начала и окончания, чтобы ничего не упустить</p>
       </div>
       <div class="feature-card">
-        <i class="fa-regular fa-chart-line feature-icon"></i>
+        <i class="fa-solid fa-chart-line"></i>
         <h3>Приоритеты</h3>
         <p>Расставляйте приоритеты от 1 до 5, чтобы фокусироваться на важном</p>
       </div>

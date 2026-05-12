@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="badge">
-      <i class="fa-regular fa-circle-info"></i> О проекте
+      <i class="fa-solid fa-circle-info"></i> О проекте
     </div>
 
     <div class="page-header">
@@ -10,31 +10,31 @@
 
     <div class="about-content">
       <div class="about-card">
-        <i class="fa-regular fa-lightbulb about-icon"></i>
+        <i class="fa-solid fa-lightbulb about-icon"></i>
         <h2>Идея проекта</h2>
-        <p>TaskFlow создан для того, чтобы помочь людям организовать свои дела, повысить продуктивность и не забывать о важных задачах. Простой, интуитивный интерфейс и мощные возможности группировки позволяют быстро влиться в рабочий процесс.</p>
+        <p>Милый дом создан для того, чтобы помочь людям организовать свои дела, повысить продуктивность и не забывать о важных задачах. Простой, интуитивный интерфейс и мощные возможности группировки позволяют быстро влиться в рабочий процесс.</p>
       </div>
 
       <div class="about-card">
-        <i class="fa-regular fa-code about-icon"></i>
+        <i class="fa-solid fa-code about-icon"></i>
         <h2>Технологии</h2>
         <ul class="tech-list">
           <li><i class="fa-brands fa-vuejs"></i> Vue 3 (Composition API)</li>
-          <li><i class="fa-regular fa-database"></i> Pinia для управления состоянием</li>
-          <li><i class="fa-regular fa-route"></i> Vue Router</li>
-          <li><i class="fa-regular fa-css3"></i> Адаптивный CSS (Flexbox, Grid, clamp)</li>
-          <li><i class="fa-regular fa-cloud"></i> LocalStorage для хранения данных</li>
+          <li><i class="fa-solid fa-database"></i> Pinia для управления состоянием</li>
+          <li><i class="fa-solid fa-road"></i> Vue Router</li>
+          <li><i class="fa-brands fa-css3-alt"></i> Адаптивный CSS (Flexbox, Grid, clamp)</li>
+          <li><i class="fa-solid fa-floppy-disk"></i> LocalStorage для хранения данных</li>
         </ul>
       </div>
 
       <div class="about-card">
-        <i class="fa-regular fa-users about-icon"></i>
+        <i class="fa-solid fa-users about-icon"></i>
         <h2>Цели</h2>
         <p>Мы стремимся сделать управление задачами максимально приятным и эффективным. В будущем планируются напоминания, синхронизация с облаком и совместная работа над проектами.</p>
       </div>
 
       <div class="about-card">
-        <i class="fa-regular fa-envelope about-icon"></i>
+        <i class="fa-solid fa-envelope about-icon"></i>
         <h2>Контакты</h2>
         <p>Вы можете связаться с разработчиком по электронной почте: <a href="mailto:support@taskflow.example">support@taskflow.example</a></p>
         <p>Репозиторий проекта: <a href="#" target="_blank">github.com/taskflow</a></p>

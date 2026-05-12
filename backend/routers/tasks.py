@@ -17,9 +17,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 @routerTasks.post("/")
-async def add_task(
-       task: Annotated[STaskAdd, Depends()]
-) -> STaskId:
+async def add_task(task: STaskAdd) -> STaskId:
     task_id = await TaskRepository.add_one_task(task)
     logger.info("Задача добавлена")
     return {"ok": True, "task_id": task_id}

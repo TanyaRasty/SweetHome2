@@ -19,9 +19,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 @routerCategory.post("/")
-async def add_category(
-       category: Annotated[SCategoryAdd, Depends()]
-) -> SCategoryId:
+async def add_category(category: SCategoryAdd) -> SCategoryId:
     category_id = await CategoryRepository.add_one_category(category)
     logger.info("Категория добавлена")
     return {"ok": True, "task_id": category_id}
